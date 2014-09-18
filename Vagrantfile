@@ -1,7 +1,5 @@
 Vagrant.configure("2") do |config|
 
-  #config.vm.provision "shell", inline: "echo Hello"
-
   config.vm.define "zk" do |zk|
     zk.vm.box = "ubuntu/precise32"
     zk.vm.network "private_network", ip: "192.168.0.100"
